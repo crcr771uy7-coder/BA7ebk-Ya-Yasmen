@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Cairo', 'Tajawal', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+/* Custom gold gradient utility & glow effects */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #FFF3D6 0%, #F59E0B 45%, #D97706 70%, #FDE68A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-btn {
+  background: linear-gradient(135deg, #D97706 0%, #F59E0B 50%, #B45309 100%);
+}
+
+.gold-border-glow {
+  box-shadow: 0 0 20px -5px rgba(245, 158, 11, 0.25);
+}
+
+.gold-card-hover {
+  transition: all 0.25s ease-in-out;
+}
+.gold-card-hover:hover {
+  border-color: rgba(245, 158, 11, 0.45);
+  box-shadow: 0 10px 30px -10px rgba(245, 158, 11, 0.15);
+  transform: translateY(-2px);
+}
+
+/* KaTeX custom styling to fit luxury dark/gold theme */
+.katex {
+  direction: ltr !important;
+  unicode-bidi: isolate !important;
+  font-size: 1.08em;
+  color: #fde68a !important;
+}
+
+.katex-display {
+  direction: ltr !important;
+  text-align: center;
+  padding: 0.75rem 1rem;
+  margin: 0.5rem 0 !important;
+  background: rgba(15, 15, 15, 0.75);
+  border-radius: 0.75rem;
+  border: 1px solid rgba(245, 158, 11, 0.15);
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+/* Math formula containers must remain LTR */
+.math-ltr {
+  direction: ltr !important;
+  display: inline-block;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+::-webkit-scrollbar-thumb {
+  background: #262626;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d97706;
+}

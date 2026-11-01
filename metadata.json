@@ -1,0 +1,6 @@
+{
+  "name": "في حب ياسمين ❤️",
+  "description": "منصة تعليمية متكاملة لتعليم ومراجعة منهج الرياضيات بتصميم أسود وذهبي أنيق وشرح تفاعلي واختبارات ومساعد ذكي.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
